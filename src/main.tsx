@@ -1,15 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from './routes/root';
 import ErrorPage from './error-page';
 import { QueryClient, QueryClientProvider} from '@tanstack/react-query';
 import './index.css'
 import Home from './routes/home';
+import Example from './routes/example';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +18,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />
+      },
+      {
+        path: '/example',
+        element: <Example />
       },
     ],
   },
