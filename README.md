@@ -25,3 +25,4 @@ cd my-app
 pnpm install
 pnpm dev
 ```
+![alt text](/public/screen.png "Homepage screenshot")
